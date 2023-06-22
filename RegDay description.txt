@@ -1,16 +1,16 @@
+Р’С…С–Рґ РЅР° Р»РѕРєР°Р»СЊРЅС–Р№ РјР°С€РёРЅС–:
+
+1. Р—Р°РїСѓСЃС‚РёС‚Рё WAMP СЃРµСЂРІРµСЂ.С‚РѕР№ С‰Рѕ РЅР° РґРёСЃРєСѓ D
+2. http://regday.develo
+
 list:
 
-7.Upload xlsx format
-8.Check upload ASCII
-/////////////
-4.to make FileController some clear
-6.Доступ к изменению данніх - только Тамаре
-7.В загрузочном файле нужно правильно указывать дату для каждой строки, при сохранении в базу берется значение даты из тек. строки 
-8.Подсветка ошибочных строк (неуникальный код, неизвестный код)
-9.Я заблокировала пока проверку в FileController.php, чтоб данные можно было загружать частями
-10.Кнопка сохранения макета в текст
-11.Развернуть на 61м
-12.Конвертировать ASCII в UTF-8 на лету
+6.Р”РѕСЃС‚СѓРї Рє РёР·РјРµРЅРµРЅРёСЋ РґР°РЅРЅС–С… - С‚РѕР»СЊРєРѕ РўР°РјР°СЂРµ
+7.Р’ Р·Р°РіСЂСѓР·РѕС‡РЅРѕРј С„Р°Р№Р»Рµ РЅСѓР¶РЅРѕ РїСЂР°РІРёР»СЊРЅРѕ СѓРєР°Р·С‹РІР°С‚СЊ РґР°С‚Сѓ РґР»СЏ РєР°Р¶РґРѕР№ СЃС‚СЂРѕРєРё, РїСЂРё СЃРѕС…СЂР°РЅРµРЅРёРё РІ Р±Р°Р·Сѓ Р±РµСЂРµС‚СЃСЏ Р·РЅР°С‡РµРЅРёРµ РґР°С‚С‹ РёР· С‚РµРє. СЃС‚СЂРѕРєРё 
+8.РџРѕРґСЃРІРµС‚РєР° РѕС€РёР±РѕС‡РЅС‹С… СЃС‚СЂРѕРє (РЅРµСѓРЅРёРєР°Р»СЊРЅС‹Р№ РєРѕРґ, РЅРµРёР·РІРµСЃС‚РЅС‹Р№ РєРѕРґ)
+9.РЇ Р·Р°Р±Р»РѕРєРёСЂРѕРІР°Р»Р° РїРѕРєР° РїСЂРѕРІРµСЂРєСѓ РІ FileController.php, С‡С‚РѕР± РґР°РЅРЅС‹Рµ РјРѕР¶РЅРѕ Р±С‹Р»Рѕ Р·Р°РіСЂСѓР¶Р°С‚СЊ С‡Р°СЃС‚СЏРјРё
+10.РљРЅРѕРїРєР° СЃРѕС…СЂР°РЅРµРЅРёСЏ РјР°РєРµС‚Р° РІ С‚РµРєСЃС‚
+11.Р Р°Р·РІРµСЂРЅСѓС‚СЊ РЅР° 61Рј
 ///////////////////
 
 php artisan config:cache
@@ -34,12 +34,14 @@ git status
 
 git commit -m "comments"
 
-git push -u regdaygit master
+git push -u regday8V master
 
 
-Накатить из уд.реп git pull regdaygit
+РќР°РєР°С‚РёС‚СЊ РёР· СѓРґ.СЂРµРї git pull regday8V
 
-
+//РѕРґРёРЅ СЂР°Р· РІРЅР°С‡Р°Р»Рµ РЅСѓР¶РЅРѕ СЃРІСЏР·Р°С‚СЊ СЃ СѓРґР°Р»РµРЅРЅСЊС–Рј СЂРµРїРѕР·РёС‚РѕСЂРёРµРј
+git remote add regday8V https://github.com/VictoriaBodnar/regday8V.git
+git push -u regday8V master
 -----------------------------------------------------------------------------
 PROJECT RegDay
 
@@ -65,24 +67,24 @@ C:\wamp64>composer create-project --prefer-dist laravel/laravel regday "5.4.*"
 
 C:\wamp64\regday>php artisan serve 
 
-выполнение встроенных миграций табл users
+РІС‹РїРѕР»РЅРµРЅРёРµ РІСЃС‚СЂРѕРµРЅРЅС‹С… РјРёРіСЂР°С†РёР№ С‚Р°Р±Р» users
 C:\wamp64\regday>php artisan migrate
 
-дало ошибку 
+РґР°Р»Рѕ РѕС€РёР±РєСѓ 
 
  SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was t
  oo long; max key length is 1000 bytes
 
-гугл
+РіСѓРіР»
 
 
-C:\wamp64\regday>php artisan migrate (будет вып для всех файлов миграций в дан сл это табл пользователей)--ПОРЯДОК ВЫПОЛНЕНИЯ ВАЖЕН,ЕСЛИ ЕСТЬ ВНЕШНИЕ КЛЮЧИ(я переименовывала названия файлов).
+C:\wamp64\regday>php artisan migrate (Р±СѓРґРµС‚ РІС‹Рї РґР»СЏ РІСЃРµС… С„Р°Р№Р»РѕРІ РјРёРіСЂР°С†РёР№ РІ РґР°РЅ СЃР» СЌС‚Рѕ С‚Р°Р±Р» РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№)--РџРћР РЇР”РћРљ Р’Р«РџРћР›РќР•РќРРЇ Р’РђР–Р•Рќ,Р•РЎР›Р Р•РЎРўР¬ Р’РќР•РЁРќРР• РљР›Р®Р§Р(СЏ РїРµСЂРµРёРјРµРЅРѕРІС‹РІР°Р»Р° РЅР°Р·РІР°РЅРёСЏ С„Р°Р№Р»РѕРІ).
 
 
 C:\wamp64\regday>php artisan make:migration create_consumers_table --create=consumers
 Created Migration: 2018_05_17_105314_create_consumers_table
 
-C:\wamp64\regday>php artisan migrate --step (будут вып только те миграции, что  не были выполнены ранее)
+C:\wamp64\regday>php artisan migrate --step (Р±СѓРґСѓС‚ РІС‹Рї С‚РѕР»СЊРєРѕ С‚Рµ РјРёРіСЂР°С†РёРё, С‡С‚Рѕ  РЅРµ Р±С‹Р»Рё РІС‹РїРѕР»РЅРµРЅС‹ СЂР°РЅРµРµ)
 Migrating: 2018_05_17_105314_create_consumers_table
 Migrated:  2018_05_17_105314_create_consumers_table
 
@@ -90,12 +92,12 @@ C:\wamp64\regday>php artisan migrate:rollback
 Rolling back: 2018_05_17_105314_create_consumers_table
 Rolled back:  2018_05_17_105314_create_consumers_table
 
-запускаем создание встроенного модуля авторизации
+Р·Р°РїСѓСЃРєР°РµРј СЃРѕР·РґР°РЅРёРµ РІСЃС‚СЂРѕРµРЅРЅРѕРіРѕ РјРѕРґСѓР»СЏ Р°РІС‚РѕСЂРёР·Р°С†РёРё
 C:\wamp64\regday>php artisan make:auth
 Authentication scaffolding generated successfully.
 
 
-создаем файл модель C:\wamp64\regday\app\Consumer.php
+СЃРѕР·РґР°РµРј С„Р°Р№Р» РјРѕРґРµР»СЊ C:\wamp64\regday\app\Consumer.php
 C:\wamp64\regday>php artisan make:model Consumer
 Model created successfully.
 
@@ -103,49 +105,49 @@ Model created successfully.
 ...ConsumerController
 
 *****************************************************************************
-Таблица rems (& CRUD)
+РўР°Р±Р»РёС†Р° rems (& CRUD)
 *****************************************************************************
 
---Создаем файл миграции
+--РЎРѕР·РґР°РµРј С„Р°Р№Р» РјРёРіСЂР°С†РёРё
 C:\wamp64\regday>php artisan make:migration create_rems_table --create=rems
 Created Migration: 2018_05_23_060417_create_rems_table
 
---редактируем файл миграции 2018_05_23_060417_create_rems_table.php, добавляем поля.
+--СЂРµРґР°РєС‚РёСЂСѓРµРј С„Р°Р№Р» РјРёРіСЂР°С†РёРё 2018_05_23_060417_create_rems_table.php, РґРѕР±Р°РІР»СЏРµРј РїРѕР»СЏ.
 
---выполняем миграцию
+--РІС‹РїРѕР»РЅСЏРµРј РјРёРіСЂР°С†РёСЋ
 
-C:\wamp64\regday>php artisan migrate --step (будут вып только те миграции, что  не были выполнены ранее)
+C:\wamp64\regday>php artisan migrate --step (Р±СѓРґСѓС‚ РІС‹Рї С‚РѕР»СЊРєРѕ С‚Рµ РјРёРіСЂР°С†РёРё, С‡С‚Рѕ  РЅРµ Р±С‹Р»Рё РІС‹РїРѕР»РЅРµРЅС‹ СЂР°РЅРµРµ)
 Migrating: 2018_05_23_060417_create_rems_table
 Migrated:  2018_05_23_060417_create_rems_table
 
---Создаем файл модель для таблицы rems
+--РЎРѕР·РґР°РµРј С„Р°Р№Р» РјРѕРґРµР»СЊ РґР»СЏ С‚Р°Р±Р»РёС†С‹ rems
 C:\wamp64\regday>php artisan make:model Rem
 Model created successfully.
 
---Создаем контроллер ресурсов.Это контроллер с уже встроенными стандартными действиями CRUD 
+--РЎРѕР·РґР°РµРј РєРѕРЅС‚СЂРѕР»Р»РµСЂ СЂРµСЃСѓСЂСЃРѕРІ.Р­С‚Рѕ РєРѕРЅС‚СЂРѕР»Р»РµСЂ СЃ СѓР¶Рµ РІСЃС‚СЂРѕРµРЅРЅС‹РјРё СЃС‚Р°РЅРґР°СЂС‚РЅС‹РјРё РґРµР№СЃС‚РІРёСЏРјРё CRUD 
 C:\wamp64\regday>php artisan make:controller RemController --resource
 Controller created successfully.
 
---В файле маршрутов web.php прописываем маршрут Route::resource('rems', 'RemController');
+--Р’ С„Р°Р№Р»Рµ РјР°СЂС€СЂСѓС‚РѕРІ web.php РїСЂРѕРїРёСЃС‹РІР°РµРј РјР°СЂС€СЂСѓС‚ Route::resource('rems', 'RemController');
 
 *****************************************************************************
-Таблица otrs (& CRUD)
-*****************************************************************************
-
-*****************************************************************************
-Таблица seties (& CRUD)
+РўР°Р±Р»РёС†Р° otrs (& CRUD)
 *****************************************************************************
 
 *****************************************************************************
-Таблица types (& CRUD)
+РўР°Р±Р»РёС†Р° seties (& CRUD)
 *****************************************************************************
 
 *****************************************************************************
-Таблица pasps (& CRUD)
+РўР°Р±Р»РёС†Р° types (& CRUD)
 *****************************************************************************
 
 *****************************************************************************
-Таблица grafs (& CRUD)
+РўР°Р±Р»РёС†Р° pasps (& CRUD)
+*****************************************************************************
+
+*****************************************************************************
+РўР°Р±Р»РёС†Р° grafs (& CRUD)
 *****************************************************************************
 
 
@@ -155,57 +157,58 @@ php artisan make:seeder UsersTableSeeder
 
 DatabaseSeeder.php -> UsersTableSeeder.php -> ModelFactory.php
 
-php artisan db:seed 			    // выполнит общий файл DatabaseSeeder.php
+php artisan db:seed 			    // РІС‹РїРѕР»РЅРёС‚ РѕР±С‰РёР№ С„Р°Р№Р» DatabaseSeeder.php
 
-php artisan db:seed --class=RemsTableSeeder // выполнит файл отдельной таблицы RemsTableSeeder.php
+php artisan db:seed --class=RemsTableSeeder // РІС‹РїРѕР»РЅРёС‚ С„Р°Р№Р» РѕС‚РґРµР»СЊРЅРѕР№ С‚Р°Р±Р»РёС†С‹ RemsTableSeeder.php
 
-php artisan migrate:refresh --seed 	    // откат и повторное выполнение миграций + заполнение данными
+php artisan migrate:refresh --seed 	    // РѕС‚РєР°С‚ Рё РїРѕРІС‚РѕСЂРЅРѕРµ РІС‹РїРѕР»РЅРµРЅРёРµ РјРёРіСЂР°С†РёР№ + Р·Р°РїРѕР»РЅРµРЅРёРµ РґР°РЅРЅС‹РјРё
 
 
 
 php artisan migrate:reset //The migrate:reset command will roll back all of your application's migrations:
 
 php artisan migrate:rollback --step=2 // This command will roll back two last files of migrations (in order by name files)
-C:\wamp64\regday>php artisan migrate --step (будут вып только те миграции, что  не были выполнены ранее)
+C:\wamp64\regday>php artisan migrate --step (Р±СѓРґСѓС‚ РІС‹Рї С‚РѕР»СЊРєРѕ С‚Рµ РјРёРіСЂР°С†РёРё, С‡С‚Рѕ  РЅРµ Р±С‹Р»Рё РІС‹РїРѕР»РЅРµРЅС‹ СЂР°РЅРµРµ)
 
-****************Загрузка файла в табл Graf******************************************************
+****************Р—Р°РіСЂСѓР·РєР° С„Р°Р№Р»Р° РІ С‚Р°Р±Р» Graf******************************************************
 
-Подключение класс Maatwebsite для работы с эксел файлами
+РџРѕРґРєР»СЋС‡РµРЅРёРµ РєР»Р°СЃСЃ Maatwebsite РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ СЌРєСЃРµР» С„Р°Р№Р»Р°РјРё
 http://www.expertphp.in/article/laravel-5-maatwebsite-import-excel-into-db-and-export-data-into-csv-and-excel
 
-Подключение классов Form , Html
+РџРѕРґРєР»СЋС‡РµРЅРёРµ РєР»Р°СЃСЃРѕРІ Form , Html
 https://laravelcollective.com/docs/5.4/html
 
 
 
-Порядок подготовки файла загрузки режимных измерерий.
+РџРѕСЂСЏРґРѕРє РїРѕРґРіРѕС‚РѕРІРєРё С„Р°Р№Р»Р° Р·Р°РіСЂСѓР·РєРё СЂРµР¶РёРјРЅС‹С… РёР·РјРµСЂРµСЂРёР№.
 
-1.Проверить повторяющиеся значения кода (условное форматирование)
-2.Все числа д б целые (поиск по файлу .,)
-3.В первой строке должны быть названия колонок
-4.Изменить формат даты на yyyy-mm-dd
-5.Экселевский файл сохранить как csv с разделителями запятыми.
-6.Открыть csv при помощи Блокнот заменить ; на , и выставить кодировку UTF-8
+1.РџСЂРѕРІРµСЂРёС‚СЊ РїРѕРІС‚РѕСЂСЏСЋС‰РёРµСЃСЏ Р·РЅР°С‡РµРЅРёСЏ РєРѕРґР° (СѓСЃР»РѕРІРЅРѕРµ С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ)
+2.Р’СЃРµ С‡РёСЃР»Р° Рґ Р± С†РµР»С‹Рµ (РїРѕРёСЃРє РїРѕ С„Р°Р№Р»Сѓ .,)
+3.Р’ РїРµСЂРІРѕР№ СЃС‚СЂРѕРєРµ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РЅР°Р·РІР°РЅРёСЏ РєРѕР»РѕРЅРѕРє
+4.РР·РјРµРЅРёС‚СЊ С„РѕСЂРјР°С‚ РґР°С‚С‹ РЅР° yyyy-mm-dd
+5.Р¤Р°Р№Р» С„РѕСЂРјР°С‚Сѓ *.xlsx, С‰Рѕ РјС–СЃС‚РёС‚СЊ С‚С–Р»СЊРєРё РѕРґРёРЅ Р»РёСЃС‚ Р· РґР°РЅРёРјРё РјРѕР¶РЅР° Р·Р°РІР°РЅС‚Р°Р¶СѓРІР°С‚Рё. 
+РІС–РґРјС–РЅРµРЅРѕ 5.Р­РєСЃРµР»РµРІСЃРєРёР№ С„Р°Р№Р» СЃРѕС…СЂР°РЅРёС‚СЊ РєР°Рє csv СЃ СЂР°Р·РґРµР»РёС‚РµР»СЏРјРё Р·Р°РїСЏС‚С‹РјРё.
+РІС–РґРјС–РЅРµРЅРѕ 6.РћС‚РєСЂС‹С‚СЊ csv РїСЂРё РїРѕРјРѕС‰Рё Р‘Р»РѕРєРЅРѕС‚ Р·Р°РјРµРЅРёС‚СЊ ; РЅР° , Рё РІС‹СЃС‚Р°РІРёС‚СЊ РєРѕРґРёСЂРѕРІРєСѓ UTF-8
 
-Проверки при загрузке:
-Поле даты date_zamer берем значение поля из первой строки и проверяем, что оно существует в табл pasps, и далее берем 
-это значение для всех остальных строк как поле даты.(так как оно д б одинаковым для всех сторк)
-Поле типа type_zamer берем значение поля из первой строки и проверяем, что оно существует в табл types, и далее берем 
-это значение для всех остальных строк как поле типа замера.
+РџСЂРѕРІРµСЂРєРё РїСЂРё Р·Р°РіСЂСѓР·РєРµ:
+РџРѕР»Рµ РґР°С‚С‹ date_zamer Р±РµСЂРµРј Р·РЅР°С‡РµРЅРёРµ РїРѕР»СЏ РёР· РїРµСЂРІРѕР№ СЃС‚СЂРѕРєРё Рё РїСЂРѕРІРµСЂСЏРµРј, С‡С‚Рѕ РѕРЅРѕ СЃСѓС‰РµСЃС‚РІСѓРµС‚ РІ С‚Р°Р±Р» pasps, Рё РґР°Р»РµРµ Р±РµСЂРµРј 
+СЌС‚Рѕ Р·РЅР°С‡РµРЅРёРµ РґР»СЏ РІСЃРµС… РѕСЃС‚Р°Р»СЊРЅС‹С… СЃС‚СЂРѕРє РєР°Рє РїРѕР»Рµ РґР°С‚С‹.(С‚Р°Рє РєР°Рє РѕРЅРѕ Рґ Р± РѕРґРёРЅР°РєРѕРІС‹Рј РґР»СЏ РІСЃРµС… СЃС‚РѕСЂРє)
+РџРѕР»Рµ С‚РёРїР° type_zamer Р±РµСЂРµРј Р·РЅР°С‡РµРЅРёРµ РїРѕР»СЏ РёР· РїРµСЂРІРѕР№ СЃС‚СЂРѕРєРё Рё РїСЂРѕРІРµСЂСЏРµРј, С‡С‚Рѕ РѕРЅРѕ СЃСѓС‰РµСЃС‚РІСѓРµС‚ РІ С‚Р°Р±Р» types, Рё РґР°Р»РµРµ Р±РµСЂРµРј 
+СЌС‚Рѕ Р·РЅР°С‡РµРЅРёРµ РґР»СЏ РІСЃРµС… РѕСЃС‚Р°Р»СЊРЅС‹С… СЃС‚СЂРѕРє РєР°Рє РїРѕР»Рµ С‚РёРїР° Р·Р°РјРµСЂР°.
 
-Поле код потребителя kod_consumer должно иметь значение существующее в табл consumers и быть уникальным в загружаемом файле
+РџРѕР»Рµ РєРѕРґ РїРѕС‚СЂРµР±РёС‚РµР»СЏ kod_consumer РґРѕР»Р¶РЅРѕ РёРјРµС‚СЊ Р·РЅР°С‡РµРЅРёРµ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµРµ РІ С‚Р°Р±Р» consumers Рё Р±С‹С‚СЊ СѓРЅРёРєР°Р»СЊРЅС‹Рј РІ Р·Р°РіСЂСѓР¶Р°РµРјРѕРј С„Р°Р№Р»Рµ
 
-Поля измерений д б непустыми, д б целыми числами
+РџРѕР»СЏ РёР·РјРµСЂРµРЅРёР№ Рґ Р± РЅРµРїСѓСЃС‚С‹РјРё, Рґ Р± С†РµР»С‹РјРё С‡РёСЃР»Р°РјРё
 
-Поле a_cyt д б суммой a1...a24
+РџРѕР»Рµ a_cyt Рґ Р± СЃСѓРјРјРѕР№ a1...a24
 
-Пустая строка означает конец файла
+РџСѓСЃС‚Р°СЏ СЃС‚СЂРѕРєР° РѕР·РЅР°С‡Р°РµС‚ РєРѕРЅРµС† С„Р°Р№Р»Р°
 
-Показать общую сумму по файлу для сверки
+РџРѕРєР°Р·Р°С‚СЊ РѕР±С‰СѓСЋ СЃСѓРјРјСѓ РїРѕ С„Р°Р№Р»Сѓ РґР»СЏ СЃРІРµСЂРєРё
 
 **********************************************************************************************
 
-Настроить доступ к приложению по сети:
+РќР°СЃС‚СЂРѕРёС‚СЊ РґРѕСЃС‚СѓРї Рє РїСЂРёР»РѕР¶РµРЅРёСЋ РїРѕ СЃРµС‚Рё:
 
 For WAMPServer 3 and above
 In WAMPServer 3 there is a Virtual Host defined by default. Therefore the above suggestions do not work. You no longer need to make ANY amendments to the httpd.conf file. 
@@ -249,37 +252,37 @@ Require ip 192.168.1.100
 Require ip 192.168.1.101
 
 
-Запуск сервера Laravel с доступом по лок.сети:
+Р—Р°РїСѓСЃРє СЃРµСЂРІРµСЂР° Laravel СЃ РґРѕСЃС‚СѓРїРѕРј РїРѕ Р»РѕРє.СЃРµС‚Рё:
 
-cd C:\wamp64\regday
+cd D:\wamp64\regday
 
 php artisan serve --host 0.0.0.0 
 
-вход через http://10.81.1.80:8000/
+РІС…РѕРґ С‡РµСЂРµР· http://10.81.1.80:8000/
 
 
-мой пароль 123456789
+РјРѕР№ РїР°СЂРѕР»СЊ 123456789
 
 ---------Password reset-------------
-1.Не работает через smtp.gmail.com
+1.РќРµ СЂР°Р±РѕС‚Р°РµС‚ С‡РµСЂРµР· smtp.gmail.com
 MAIL_DRIVER=smtp
 MAIL_HOST=smtp.gmail.com
 MAIL_PORT=587
 MAIL_USERNAME=winterlink11@gmail.com	
 MAIL_PASSWORD=protokol1212
 MAIL_ENCRYPTION=tls
-Ошибка :Connection could not be established with host smtp.gmail.com [A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+РћС€РёР±РєР° :Connection could not be established with host smtp.gmail.com [A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
 #10060]
-2.Запустить командную строку от имени администратора
-3.Включить telnet:    pkgmgr /iu:”TelnetClient”
-4.Проверить соединение: telnet smtp.gmail.com 587
-5.Из дома ответ такой: Connecting To smtp.gmail.com...Could not open connection to the host, on port 587: Connect failed
-  Из офиса ответ такой: 220 smtp.gmail.com ESMTP i2sm2010418ljn.109 - gsmtp
+2.Р—Р°РїСѓСЃС‚РёС‚СЊ РєРѕРјР°РЅРґРЅСѓСЋ СЃС‚СЂРѕРєСѓ РѕС‚ РёРјРµРЅРё Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°
+3.Р’РєР»СЋС‡РёС‚СЊ telnet:    pkgmgr /iu:вЂќTelnetClientвЂќ
+4.РџСЂРѕРІРµСЂРёС‚СЊ СЃРѕРµРґРёРЅРµРЅРёРµ: telnet smtp.gmail.com 587
+5.РР· РґРѕРјР° РѕС‚РІРµС‚ С‚Р°РєРѕР№: Connecting To smtp.gmail.com...Could not open connection to the host, on port 587: Connect failed
+  РР· РѕС„РёСЃР° РѕС‚РІРµС‚ С‚Р°РєРѕР№: 220 smtp.gmail.com ESMTP i2sm2010418ljn.109 - gsmtp
 
 ********
 Always remember MAIL_DRIVER=smtp work for localhost but in case of Server you have make change MAIL_DRIVER=sendmail
 *********
-Вариант Mailgun
+Р’Р°СЂРёР°РЅС‚ Mailgun
 
 MAIL_DRIVER=smtp
 MAIL_HOST=smtp.mailgun.org
@@ -288,11 +291,11 @@ MAIL_USERNAME=postmaster@sandbox924344ae8fc249c5a5039e1b9b948a7b.mailgun.org
 MAIL_PASSWORD=932e030488b69d6224cc2609d77fba10-87c34c41-2ff580d0
 MAIL_ENCRYPTION=tls
 
-та же фигня Connecting To smtp.mailgun.org...Could not open connection to the host, on port 587: Connect failed
-Порты закрыты провайдером.
+С‚Р° Р¶Рµ С„РёРіРЅСЏ Connecting To smtp.mailgun.org...Could not open connection to the host, on port 587: Connect failed
+РџРѕСЂС‚С‹ Р·Р°РєСЂС‹С‚С‹ РїСЂРѕРІР°Р№РґРµСЂРѕРј.
 
 ****************************************
-Рабочий вариант ОБЛЕНЕРГО
+Р Р°Р±РѕС‡РёР№ РІР°СЂРёР°РЅС‚ РћР‘Р›Р•РќР•Р Р“Рћ
 
 MAIL_DRIVER=smtp
 MAIL_HOST=10.81.1.71
@@ -309,16 +312,16 @@ To remove a globally installed package run: composer global remove laravel/insta
 To delete a created laravel project just delete the folder.
 
 
-Установка новой версии 8
+РЈСЃС‚Р°РЅРѕРІРєР° РЅРѕРІРѕР№ РІРµСЂСЃРёРё 8
 
 1.composer create-project laravel/laravel:^8.0 example-app
  
   cd example-app
  
   php artisan serve
-2. Скопировала со старого файльі миграций (кроме тех которіе бьіли в автоматически созданьі в новой версии)
-2. редактируем файл env
-3. запускаем миграции в таком порядке
+2. РЎРєРѕРїРёСЂРѕРІР°Р»Р° СЃРѕ СЃС‚Р°СЂРѕРіРѕ С„Р°Р№Р»СЊС– РјРёРіСЂР°С†РёР№ (РєСЂРѕРјРµ С‚РµС… РєРѕС‚РѕСЂС–Рµ Р±СЊС–Р»Рё РІ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё СЃРѕР·РґР°РЅСЊС– РІ РЅРѕРІРѕР№ РІРµСЂСЃРёРё)
+2. СЂРµРґР°РєС‚РёСЂСѓРµРј С„Р°Р№Р» env
+3. Р·Р°РїСѓСЃРєР°РµРј РјРёРіСЂР°С†РёРё РІ С‚Р°РєРѕРј РїРѕСЂСЏРґРєРµ
 php artisan migrate --path=/database/migrations/2014_10_12_000000_create_users_table.php 
 php artisan migrate --path=/database/migrations/2014_10_12_100000_create_password_resets_table.php 
 php artisan migrate --path=/database/migrations/2019_08_19_000000_create_failed_jobs_table.php
@@ -330,7 +333,7 @@ php artisan migrate --path=/database/migrations/2018_05_31_085306_create_pasps_t
 php artisan migrate --path=/database/migrations/2018_06_01_105314_create_consumers_table.php
 php artisan migrate --path=/database/migrations/2018_06_01_115127_create_grafs_table.php
 
-5.копіювати seeders
+5.РєРѕРїС–СЋРІР°С‚Рё seeders
 php artisan db:seed --class=SetiesTableSeeder
 
 
@@ -341,9 +344,82 @@ php artisan make:seeder TypesTableSeeder
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 In config\app.PHP I have written the name, company &other data of my application
 
+ssh bodnar_va@10.81.1.112
+M#5-%PA7;Mf&Gbt8*^
+
+cd /var/www/html/regday
+
+vi .env 
+:wq Р·Р±РµСЂРµРіС‚Рё С– Р·Р°РєСЂРёС‚Рё
+:q! РЅРµ Р·Р±РµСЂС–РіР°С‚Рё С– Р·Р°РєСЂРёС‚Рё
+
+cd /etc/httpd/conf.d/regday.conf
+
+Р’СЃС‚Р°РЅРѕРІР»РµРЅРЅСЏ РЅР° 112:
+
+1.РЎРєРѕРїС–СЋРІР°С‚Рё РїР°РїРєСѓ Р· Р»РѕРє.РЅР° 112 /var/www/html/regday
+3.Р’С–РґСЂРµРґР°РіСѓРІР°С‚Рё .env , С‡РµСЂРµР· ftp
+2.РџРµСЂРµР№С‚Рё РІ РїР°РїРєСѓ regday
+3.Р—Р°РїСѓСЃС‚РёС‚Рё РїРѕ С–РЅСЃС‚СЂСѓРєС†С–С— https://getcomposer.org/download/ , СЂРѕР·РґС–Р» Command-line installation
+4.Р—Р°РїСѓСЃС‚РёС‚Рё composer install --no-dev . РґР»СЏ 112 --no-dev РЅРµ РїРёСЃР°С‚Рё , РІРѕРЅРѕ РІРёРєР»СЋС‡Р°С” РјРѕРґСѓР»С– СЂРѕР·СЂРѕР±РєРё
+ $ composer install --no-dev
+5.Р“РµРЅРµСЂСѓРІР°С‚Рё РєР»СЋС‡,
+ $ php artisan key:generate
+6.Р§РµСЂРµР· ftp РґРѕРґР°Р»Р° РїСЂР°РІР° РЅР° РїР°РїРєРё storage and bootstrap/cache.
+7.РЎС‚РІРѕСЂРёС‚Рё Р‘Р” regday РЅР° СЃРµСЂРІРµСЂС– С– Р·СЂРѕР±РёС‚Рё С‚СѓРґРё С–РјРїРѕСЂС‚ regday.sql (РєРѕРґРёСЂРѕРІРєР° UTF-8)
+8.РџРµСЂРµРІС–СЂРёС‚Рё С‡Рё РІРєР»СЋС‡РµРЅРѕ СЂР°СЃС€РёСЂРµРЅРёРµ mod_rewrite, СЏРєС‰Рѕ РЅС– - С‚Рѕ РІРєР»СЋС‡РёС‚Рё , РїРµСЂРµР·Р°РІР°РЅС‚Р°Р¶РёС‚Рё РђРїР°С‡
+9.РЎС‚РІРѕСЂРёС‚Рё С„Р°Р№Р» /etc/httpd/conf.d/regday.conf
+С‚Р°Рј РјР°С” Р±СѓС‚Рё РїСЂРѕРїРёСЃР°РЅРѕ
+<Directory /var/www/html/regday/public>
+    AllowOverride All
+    Require all granted
+</Directory>
+10. РџРµСЂРµСЃС‚Р°СЂС‚СѓРІР°С‚Рё РђРїР°С‡
+11. РЈ С„Р°Р№Р»С– /var/www/html/regday/public/.htaccess РјР°С” Р±СѓС‚Рё
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
+12. РћС‡РёСЃС‚РёС‚Рё РєРµС€
+php artisan config:clear
+php artisan cache:clear
+php artisan config:cache
+13.РџРµСЂРµРєРѕРЅР°РІС€РёСЃСЊ, С‰Рѕ mod_rewrite СѓРІС–РјРєРЅРµРЅРѕ, РЅР°Р»Р°С€С‚СѓРІР°РІС€Рё РІС–РґРїРѕРІС–РґРЅСѓ РґРёСЂРµРєС‚РёРІСѓ AllowOverride, Р·РіРµРЅРµСЂСѓРІР°РІС€Рё С„Р°Р№Р» .htaccess С– РѕС‡РёСЃС‚РёРІС€Рё РєРµС€ РєРѕРЅС„С–РіСѓСЂР°С†С–С—, 
+РІРё Р·РјРѕР¶РµС‚Рµ РІРёСЂС–С€РёС‚Рё РїРѕРјРёР»РєРё В«URL РЅРµ Р·РЅР°Р№РґРµРЅРѕВ» С‚Р° Р·Р°Р±РµР·РїРµС‡РёС‚Рё РЅР°Р»РµР¶РЅСѓ СЂРѕР±РѕС‚Сѓ РІСЃС–С… РїРѕСЃРёР»Р°РЅСЊ Сѓ РІР°С€С–Р№ РїСЂРѕРіСЂР°РјС– Laravel.
+
+https://docs.oracle.com/en/operating-systems/oracle-linux/6/admin/ol_virthosts.html
 
 
+____________________________________________________________________________________________________________________________
 
+Р©Рѕ СЏ Р·СЂРѕР±РёР»Р° РЅР° СЃРІРѕС—Р№ РјР°С€РёРЅС–, С‰РѕР± "Р РµР¶РёРјРЅРёР№ РґРµРЅСЊ" РїСЂР°С†СЋРІР°РІ РїРѕ Р°РґСЂРµСЃС– http://regday.develo Р·Р°РјС–СЃС‚СЊ http://127.0.0.1:8000/
+
+1.РЈ С„Р°Р№Р»С– D:\wamp64\bin\apache\apache2.4.51\conf\extra\httpd-vhosts.conf РґРѕРґР°Р»Р° С‚Р°РєРµ:
+<VirtualHost *:80>
+	ServerName regday.develo
+	DocumentRoot "d:/wamp64/regday/public"
+	<Directory  "d:/wamp64/regday/public/">
+		Options +Indexes +Includes +FollowSymLinks +MultiViews
+		AllowOverride All
+		Require all granted
+	</Directory>
+</VirtualHost>
+2.РЈ С„Р°Р№Р»С– C:\Windows\System32\drivers\etc\hosts РґРѕРґР°Р»Р°
+	   10.81.1.80	regday.develo 
+(Р°Р±Рѕ РјРѕР¶РЅР° 127.0.0.1	regday.develo)
+
+С‚РµРїРµСЂ Р·Р°РїСѓСЃРєР°С‚Рё РєРѕРјР°РЅРґСѓ php artisan serve  РЅРµ РїРѕС‚СЂС–Р±РЅРѕ. Р’С…С–Рґ http://regday.develo
+______________________________________________________________________________________________________________________________
+РќРђ 112 РќРђР›РђРЁРўРћР’РђРќРћ Р’Р†Р РўРЈРђР›Р¬РќРР™ РҐРћРЎРў (РЎС‚РµС†СЋРє Рћ.Рњ.)
+http://112regday.voe.local
+
+РќРµ Р»РѕРіС–РЅРёС‚СЊСЃСЏ , 1045 error
+РЎС‚РІРѕСЂРёР»Р° РєРѕСЂРёСЃС‚СѓРІР°С‡Р° РґР»СЏ Р‘Р” regday
+usr_regday
+GfwdFMK3Vjzk*J4j
+
+CREATE USER 'usr_regday'@'%' IDENTIFIED WITH mysql_native_password BY '***';GRANT USAGE ON *.* TO 'usr_regday'@'%';ALTER USER 'usr_regday'@'%' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER, CREATE TEMPORARY TABLES, CREATE VIEW, EVENT, TRIGGER, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, EXECUTE ON `regday`.* TO 'usr_regday'@'%'; ALTER USER 'usr_regday'@'%' ;
 
 
 
